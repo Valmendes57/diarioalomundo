@@ -14,16 +14,12 @@
     <div class="login_body">
         <div class="login-box">
             <h2>Diário de Bordo</h2>
-            <h2></h2>
+            <h2>{{ mensagem }}</h2>
             <form>
                 <div class="input_box">
-                    <input required type="text" placeholder="RA do aluno">
+                    <input required type="text" placeholder="Informe so número do RA" maxlength="8" oniput=""this.value = this.value.replace(/^[0-9]g,''); id="ra" nome="ra">
                 </div>
-
-                <div class="input_box">
-                    <input required type="password" placeholder="Senha">
-                </div>
-
+                              
                 <div>
                     <button class="submit">Entrar</button>
                 </div>

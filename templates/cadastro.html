@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="{{url_for('static', filename = 'stylecadastro.css')}}">
 </head>
 <body>
-    <form method="post"> 
+    <form action="/novoaluno" method="post">
         <label>Nome: </label> 
-        <input type="text" required placeholder="Nome"/> 
+        <input type="text" required placeholder="Nome" id="nome" name="nome"/> 
         <label>RA:</label> 
-        <input type="text" required placeholder="RA do aluno"/> 
+        <input required type="text" placeholder="Informe so número do RA" maxlength="8" oniput="this.value = this.value.replace(/^[0-9]/g,'');" id="ra" name="ra">
         <label>Tempo:</label> 
-        <input type="number" placeholder="Tempo de estudo mensal"/> 
+        <input type="number" placeholder="Tempo de estudo mensal" id="tempoestudo" name="tempoestudo"/> 
         <label>Renda familiar</label>
-        <input type="number" placeholder="Renda familiar mensal"/>
+        <input type="number" placeholder="Renda familiar mensal" id="rendafamiliar" name="rendafamiliar"/>
         <button type="submit">Cadastrar</button>
     </form>
     
