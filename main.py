@@ -72,7 +72,7 @@ def inserir_aluno():
         session.rollback()    
     finally:
         session.close()
-    mensagem = "cadastrado com sucesso"    
+    mensagem = "cadastrado com sucesso ok ok ok"    
 
     return redirect(url_for('listar_alunos'))
 # Pegar todos os alunos do banco e mostrar no table HTML
